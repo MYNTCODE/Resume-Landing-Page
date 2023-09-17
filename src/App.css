@@ -1,0 +1,266 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+::selection {
+  background-color: #83cabe;
+}
+/*---NavBar---*/
+nav {
+  font-weight: 400;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5;
+  padding: 5px;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 20px;
+  cursor: pointer;
+  padding: 0px 20px;
+  transition: transform 0.2s;
+}
+li:hover {
+  transform: scale(1.1);
+}
+
+li img {
+  width: 50px;
+  /*filter: drop-shadow(5px 5px 5px #919191);*/
+}
+
+/*---Home---*/
+.home-page {
+  padding-top: 100px;
+}
+
+.home-page h1 {
+  filter: drop-shadow(5px 3px 1px #c1c1c1);
+}
+
+.home-container {
+  height: 500px;
+  margin: 50px;
+  border: solid 1px;
+}
+
+.home-laptop {
+  width: 200px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+/* .home-page button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+  color: #dbdbdb;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s;
+}
+.home-page button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 5px #9fdfd8);
+}
+.home-text-container h1 {
+  font-size: 50px;
+}
+.home-text-container h3 {
+  margin-top: -50px;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+} */
+
+.home-page button {
+  border: none;
+  color: #000;
+}
+.home-page button:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.4s ease;
+}
+.home-page button:hover {
+  background-color: #c1dfdc;
+}
+.home-page button:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.home-page button:active {
+  top: 2px;
+  color: #e9e9e9;
+  background-color: #000000;
+}
+
+.home-page button {
+  width: 200px;
+  height: 40px;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/*---About---*/
+.about-page {
+  padding-top: 100px;
+}
+.about-container {
+  height: 300px;
+  margin: 50px;
+}
+.about-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.about-content img {
+  width: 150px;
+  padding: 20px;
+  transition: transform 0.5s;
+}
+
+.about-content img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(5px 5px 5px #9fdfd8);
+}
+.about-content p {
+  font-weight: 700;
+}
+
+/*---Skills---*/
+.skills-page {
+  padding-top: 100px;
+}
+.skills-container {
+  border-radius: 30px;
+  height: 650px;
+  margin: 50px;
+}
+
+.projects {
+  border-radius: 30px;
+  height: 300px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.projects-web {
+  display: flex;
+}
+
+.projects img {
+  width: 270px;
+  height: 250px;
+  margin: 20px;
+  padding: 0px;
+  border-radius: 30px;
+  border: rgb(125, 125, 125) solid 4px;
+
+  transition: transform 0.5s;
+}
+
+.projects img:hover {
+  transform: scale(1.1);
+}
+
+.projects img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* สีดำที่คลุมจาง */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.projects img:hover::before {
+  opacity: 1;
+}
+
+.projects img:active {
+  filter: drop-shadow(5px 5px 5px #2c3433);
+  opacity: 0.8;
+}
+
+.projects p {
+  font-weight: 700;
+  margin-top: 0px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.content-skills {
+  display: row;
+  justify-content: center;
+  padding: 20px;
+}
+.content-skills img {
+  width: 60px;
+  padding: 15px;
+  transition: transform 0.1s;
+}
+.content-skills img:hover {
+  transform: scale(1.1);
+}
+
+.content-skills img:active {
+  opacity: 0.6;
+}
+
+/*---Contacts---*/
+.contacts-page {
+  padding-top: 100px;
+}
+.contact-container {
+  /* border: solid 5px black; debugging */
+  margin: 50px;
+}
+
+.contact-icon img {
+  width: 30px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.contact-icon img:active {
+  filter: drop-shadow(5px 5px 5px #9fdfd8);
+}
