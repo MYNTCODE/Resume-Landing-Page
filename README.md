@@ -1,8 +1,4 @@
-# React + Vite
+### Resume Landing Page Frontend : mini project for pratice and improved divide components in react.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<a href="https://resume-landing-page-alpha.vercel.app/" target="_blank" rel="noreferrer"><img src="https://cdn.discordapp.com/attachments/1144637676016898219/1159816465847955576/Screenshot_2023-10-06_183616.jpg?ex=65326641&is=651ff141&hm=0a64ff6319335ad503e2b4a54158a5b27f8810acb76ea7453ba3ad77187e7a7d&" width="350"  alt="Resume-landingpage" /></a>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
