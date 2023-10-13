@@ -83,14 +83,20 @@ const SkillsPage = () => {
         <div className="projects">
           <section className="projects-web">
             {projects.map((project, index) => (
-              <div key={index} className="project-display">
-                <a href={project.link} target="blank" rel="noopener noreferrer">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="project-image"
-                  />
-                </a>
+              <div key={index}>
+                <div className="project-display">
+                  <a
+                    href={project.link}
+                    target="blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="project-image"
+                    />
+                  </a>
+                </div>
                 <p>{project.title}</p>
               </div>
             ))}

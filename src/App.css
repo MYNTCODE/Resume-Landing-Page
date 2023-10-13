@@ -186,14 +186,20 @@ li img {
   display: flex;
 }
 
-.projects img {
-  width: 270px;
-  height: 250px;
-  margin: 20px;
-  padding: 0px;
-  border-radius: 30px;
-  border: rgb(125, 125, 125) solid 4px;
+.project-display {
+  width: 270px; /* Set a fixed width */
+  height: 250px; /* Set a fixed height */
+  margin: 0 40px 30px; /* Add margin for spacing between projects */
+  box-sizing: border-box;
+}
 
+.projects img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  display: block;
+  border: rgb(125, 125, 125) solid 4px;
   transition: transform 0.5s;
 }
 
@@ -208,7 +214,7 @@ li img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* สีดำที่คลุมจาง */
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: opacity 0.3s;
 }
