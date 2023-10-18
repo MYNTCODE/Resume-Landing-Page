@@ -184,13 +184,18 @@ li img {
 }
 .projects-web {
   display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly with space between them */
+  /* border: solid 1px #000; debug */
+  width: 54%;
+  height: 600px;
+  padding: 20px;
 }
 
 .project-display {
   width: 270px; /* Set a fixed width */
   height: 250px; /* Set a fixed height */
-  margin: 0 40px 30px; /* Add margin for spacing between projects */
-  box-sizing: border-box;
+  /* Add margin for spacing between projects, adjust as needed */
 }
 
 .projects img {
@@ -200,11 +205,13 @@ li img {
   border-radius: 25px;
   display: block;
   border: rgb(125, 125, 125) solid 4px;
-  transition: transform 0.5s;
+  transition: transform 0.5s, box-shadow 0.3s ease;
 }
 
 .projects img:hover {
   transform: scale(1.1);
+  box-shadow: #9fdfd8 10px 10px 30px;
+  cursor: pointer;
 }
 
 .projects img::before {
@@ -230,8 +237,8 @@ li img {
 
 .projects p {
   font-weight: 700;
-  margin-top: 0px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 38px 0px 38px 0px;
+  letter-spacing: 1px;
 }
 
 .content-skills {
@@ -254,7 +261,7 @@ li img {
 
 /*---Contacts---*/
 .contacts-page {
-  padding-top: 100px;
+  margin-top: 40%;
 }
 .contact-container {
   /* border: solid 5px black; debugging */

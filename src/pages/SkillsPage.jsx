@@ -58,6 +58,18 @@ const SkillsPage = () => {
                 alt="mongoDB"
               />
             </a>
+            <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
+                alt="NodeJS"
+              />
+            </a>
+            <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg"
+                alt="Express"
+              />
+            </a>
             <a
               href="https://coursera.org/share/84c9951d268c4565f71be83f2ba3c986"
               target="_blank"
@@ -97,10 +109,9 @@ const SkillsPage = () => {
                     />
                   </a>
                 </div>
-                <p>{project.title}</p>
+                <p className="project-title">{project.title}</p>
               </div>
             ))}
-            <div></div>
           </section>
         </div>
       </div>
