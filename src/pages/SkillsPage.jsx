@@ -8,6 +8,24 @@ const SkillsPage = () => {
         <div className="content-skills">
           <div className="skills-1">
             <a
+              href="https://github.com/MYNTCODE"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://cdn.discordapp.com/attachments/1144637676016898219/1166816599798468618/github-sign.png?ex=654bdda3&is=653968a3&hm=4eb24f9999e861da449ae53a62f4f0c3e9471628df6e0679e7596c0d6126e8e4&"
+                alt="github-sign"
+                title="github"
+              />
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <img
+                src="https://cdn.discordapp.com/attachments/1144637676016898219/1166818792354091068/git.png?ex=654bdfae&is=65396aae&hm=b901327fd6a7a6e66716f1327735e773548cf8fdb5f252ae5c0cc3abe0999d4e&"
+                alt="github-version-control"
+                title="github version control"
+              />
+            </a>
+            <a
               href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
               target="_blank"
               rel="noreferrer"
@@ -15,6 +33,7 @@ const SkillsPage = () => {
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
                 alt="html"
+                title="HTML5"
               />
             </a>
 
@@ -26,12 +45,14 @@ const SkillsPage = () => {
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
                 alt="css"
+                title="CSS3"
               />
             </a>
             <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
                 alt="TailwindCSS"
+                title="Tailwind"
               />
             </a>
             <a
@@ -42,6 +63,7 @@ const SkillsPage = () => {
               <img
                 src="https://cdn.discordapp.com/attachments/895300373911314483/1142450832986611754/image.png"
                 alt="Javascript"
+                title="Javascript"
               />
             </a>
           </div>
@@ -50,24 +72,28 @@ const SkillsPage = () => {
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
                 alt="React"
+                title="React"
               />
             </a>
             <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
               <img
                 src="https://cdn.discordapp.com/attachments/895300373911314483/1142453469916180580/mongodb.png"
                 alt="mongoDB"
+                title="mongoDB"
               />
             </a>
             <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
                 alt="NodeJS"
+                title="NodeJS"
               />
             </a>
             <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg"
                 alt="Express"
+                title="Express"
               />
             </a>
             <a
@@ -78,6 +104,7 @@ const SkillsPage = () => {
               <img
                 src="https://cdn.discordapp.com/attachments/895300373911314483/1142453710241415198/image.png"
                 alt="data analytics"
+                title="data analytics"
               />
             </a>
             <a
@@ -88,6 +115,7 @@ const SkillsPage = () => {
               <img
                 src="https://cdn.discordapp.com/attachments/895300373911314483/1142481142742790194/freecodecamp.1024x1024.png"
                 alt="free code camp"
+                title="FreeCodCamp"
               />
             </a>
           </div>
