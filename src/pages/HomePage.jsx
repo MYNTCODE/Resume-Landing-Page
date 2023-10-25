@@ -43,7 +43,7 @@ const HomePage = () => {
         <div className="home-page" ref={homeRef}>
           <div className="home-text-container">
             <h1>MYNTCODE</h1>
-            <h3>Front End Developer</h3>
+            <h3>Full Stack Developer</h3>
           </div>
           <div>
             <img
