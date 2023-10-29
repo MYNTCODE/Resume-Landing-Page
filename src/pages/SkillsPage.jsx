@@ -3,10 +3,10 @@ import projects from "../data/projects";
 const SkillsPage = () => {
   return (
     <>
-      <div className="skills-container">
+      <div className="skills-container flex-col ">
         <h1>Skill and Projects</h1>
-        <div className="content-skills">
-          <div className="skills-1">
+        <div className="content-skills flex-col mt-[5%]">
+          <div className="skills-1 flex justify-center">
             <a
               href="https://github.com/MYNTCODE"
               target="_blank"
@@ -67,7 +67,7 @@ const SkillsPage = () => {
               />
             </a>
           </div>
-          <div className="skills-2">
+          <div className="skills-2 flex justify-center">
             <a href="https://react.dev/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"

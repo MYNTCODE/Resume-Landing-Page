@@ -7,10 +7,11 @@ const NavBar = ({
   handleContactsClick,
 }) => {
   return (
-    <nav className="navbar">
-      <ul>
+    <nav className="navbar lg:border-b-[3px] lg:border-black">
+      <ul className=" py-2 space-x-2 lg:py-4 lg:px-[35%] lg:space-x-[10%] sm:py-4 sm:px-[10%] sm:space-x-[13%]">
         <li onClick={handleHomeClick}>
           <img
+            className=""
             src="https://cdn.discordapp.com/attachments/895300373911314483/1142478714479837305/image.png"
             alt="Home"
           />

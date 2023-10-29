@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  font-family: Monospace;
 }
 
 ::selection {
@@ -15,7 +19,7 @@ nav {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   padding: 5px;
   z-index: 1;
 }
@@ -37,16 +41,22 @@ li:hover {
 }
 
 li img {
-  width: 50px;
   /*filter: drop-shadow(5px 5px 5px #919191);*/
 }
 
+/* @media only screen and (max-width: 390px) {
+  li img {
+    width: 550px;
+    filter: drop-shadow(5px 5px 5px #919191);
+   }
+} */
+
 /*---Home---*/
-.home-page {
-  padding-top: 100px;
-}
 
 .home-page h1 {
+  filter: drop-shadow(5px 3px 1px #c1c1c1);
+}
+.about-container h1 {
   filter: drop-shadow(5px 3px 1px #c1c1c1);
 }
 
@@ -54,12 +64,6 @@ li img {
   height: 500px;
   margin: 50px;
   border: solid 1px;
-}
-
-.home-laptop {
-  width: 200px;
-  padding-top: 20px;
-  padding-bottom: 50px;
 }
 
 /* .home-page button {
@@ -105,7 +109,7 @@ li img {
   transition: all 0.4s ease;
 }
 .home-page button:hover {
-  background-color: #c1dfdc;
+  background-color: #dddddd;
 }
 .home-page button:hover:after {
   left: auto;
@@ -124,7 +128,6 @@ li img {
   color: #000;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: "Lato", sans-serif;
   font-weight: 700;
   letter-spacing: 0.5px;
   background: transparent;
@@ -136,144 +139,45 @@ li img {
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
-
-/*---About---*/
-.about-page {
-  padding-top: 100px;
-}
-.about-container {
-  height: 300px;
-  margin: 50px;
-}
-.about-content {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
+.skills-1 img {
+  height: 50px;
+  width: 50px;
 }
 
-.about-content img {
-  width: 150px;
-  padding: 20px;
-  transition: transform 0.5s;
+.skills-2 img {
+  height: 50px;
+  width: 50px;
 }
 
-.about-content img:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(5px 5px 5px #9fdfd8);
-}
-.about-content p {
-  font-weight: 700;
-}
-
-/*---Skills---*/
-.skills-page {
-  padding-top: 100px;
-}
-.skills-container {
-  border-radius: 30px;
-  height: 650px;
-  margin: 50px;
-}
-
-.projects {
-  border-radius: 30px;
-  height: 300px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.projects-web {
-  display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
-  justify-content: space-between; /* Distribute items evenly with space between them */
-  /* border: solid 1px #000; debug */
-  width: 60%;
-  height: 600px;
-  padding: 20px;
-}
-
-.project-display {
-  width: 300px; /* Set a fixed width */
-  height: 250px; /* Set a fixed height */
-  /* Add margin for spacing between projects, adjust as needed */
-}
-
-.projects img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 25px;
-  display: block;
-  border: rgb(125, 125, 125) solid 4px;
-  transition: transform 0.5s, box-shadow 0.3s ease;
-}
-
-.projects img:hover {
-  transform: scale(1.1);
-  box-shadow: #9fdfd8 10px 10px 30px;
-  cursor: pointer;
-}
-
-.projects img::before {
-  content: "";
-  position: absolute;
+/* custom cursor  */
+.ball {
+  width: 70px;
+  height: 70px;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s;
+  border-radius: 50%;
+  pointer-events: none;
+  backdrop-filter: invert(1) grayscale(1);
+  -webkit-backdrop-filter: invert(1) grayscale(1);
+  z-index: 99999;
 }
 
-.projects img:hover::before {
-  opacity: 1;
+.infomation-box:hover {
+  cursor: none;
 }
 
-.projects img:active {
-  filter: drop-shadow(5px 5px 5px #2c3433);
-  opacity: 0.8;
-}
-
-.projects p {
-  font-weight: 700;
-  margin: 38px 0px 38px 0px;
-  letter-spacing: 1px;
-}
-
-.content-skills {
-  display: row;
-  justify-content: center;
-  padding: 20px;
-}
-.content-skills img {
-  width: 60px;
-  padding: 15px;
-  transition: transform 0.1s;
-}
-.content-skills img:hover {
-  transform: scale(1.1);
-}
-
-.content-skills img:active {
-  opacity: 0.6;
-}
-
-/*---Contacts---*/
-.contacts-page {
-  margin-top: 40%;
-}
-.contact-container {
-  /* border: solid 5px black; debugging */
-  margin: 50px;
-}
-
-.contact-icon img {
-  width: 30px;
-  padding: 20px;
-  transition: transform 0.3s;
-}
-
-.contact-icon img:active {
-  filter: drop-shadow(5px 5px 5px #9fdfd8);
+@media only screen and (min-width: 600px) {
+  .ball {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    backdrop-filter: invert(1) grayscale(1);
+    -webkit-backdrop-filter: invert(1) grayscale(1);
+    z-index: 99999;
+  }
 }
