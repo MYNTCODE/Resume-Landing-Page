@@ -79,7 +79,7 @@ const HomePage = () => {
             rel="noreferrer"
           >
             <button title="GitHub" className=" text-[16px]">
-              Resume Download
+              Resume
             </button>
           </a>{" "}
           <div className="infomation-box flex items-center  justify-center  text-start w-full h-[300px] ">
