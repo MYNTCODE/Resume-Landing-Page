@@ -3,10 +3,10 @@ import projects from "../data/projects";
 const SkillsPage = () => {
   return (
     <>
-      <div className="skills-container flex-col ">
-        <h1>Skill and Projects</h1>
-        <div className="content-skills flex-col mt-[5%]">
-          <div className="skills-1 flex justify-center">
+      <div className="skills-container flex-col mt-10 lg:h-[100vh] border-black pt-20 lg:border-[3px] lg:m-10 rounded-3xl">
+        <h1 className="mt-6 text-[30px] lg:text-[50px]">Skill and Projects</h1>
+        <div className="content-skills flex-col mt-[5%] ">
+          <div className="skills-1 flex justify-center lg:space-x-4 mb-4 space-x-1">
             <a
               href="https://github.com/MYNTCODE"
               target="_blank"
@@ -67,7 +67,7 @@ const SkillsPage = () => {
               />
             </a>
           </div>
-          <div className="skills-2 flex justify-center">
+          <div className="skills-2 flex justify-center lg:space-x-4 space-x-1">
             <a href="https://react.dev/" target="_blank" rel="noreferrer">
               <img
                 src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
@@ -120,11 +120,11 @@ const SkillsPage = () => {
             </a>
           </div>
         </div>
-        <div className="projects">
-          <section className="projects-web">
+        <div className="projects my-10 mx-12">
+          <section className="projects-web lg:flex lg:justify-between lg:h-[600px] lg:p-[20px]">
             {projects.map((project, index) => (
               <div key={index}>
-                <div className="project-display">
+                <div className="project-display ">
                   <a
                     href={project.link}
                     target="blank"
@@ -137,7 +137,9 @@ const SkillsPage = () => {
                     />
                   </a>
                 </div>
-                <p className="project-title">{project.title}</p>
+                <p className="project-title py-6 lg:py-0 lg:pt-10">
+                  {project.title}
+                </p>
               </div>
             ))}
           </section>

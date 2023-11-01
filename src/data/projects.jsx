@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "Resume landing page",
+    title: "Resume landing page (first)",
     image:
       "https://cdn.discordapp.com/attachments/895300373911314483/1142545688186593321/Screenshot_2023-08-20_023222.png",
     link: "https://react-landing-page-bice-six.vercel.app/",

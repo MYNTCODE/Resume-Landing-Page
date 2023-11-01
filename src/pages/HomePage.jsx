@@ -90,13 +90,13 @@ const HomePage = () => {
               more convenient for people. And coding is makes me learn new
               things, be challenged everyday.
               <span className=" font-bold">
-                Programming is like magic in fantasy.
+                &nbsp; Programming is like magic in fantasy.
               </span>
             </p>
           </div>
         </div>
 
-        <div className="about-page" ref={aboutRef}>
+        <div className="about-page h-[100vh]" ref={aboutRef}>
           <AboutPage />
         </div>
         <div className="skills-page" ref={skillsRef}>
