@@ -74,7 +74,7 @@ const HomePage = () => {
             />
           </div>
           <a
-            href="https://cdn.discordapp.com/attachments/1144637676016898219/1172896771530297474/Resume-Pornphimol-saelao_.pdf?ex=6561fc3d&is=654f873d&hm=c66493773e879309b31138052985bcf86f7b44c0ebe97fac6dc0c642395f5498&"
+            href="https://cdn.discordapp.com/attachments/1144637676016898219/1172898191071514685/Resume-Pornphimol.pdf?ex=6561fd90&is=654f8890&hm=62efa7355cd89fd318235792671bf90f5b780ed3870db8ee410906a98cb9312f&"
             target="_blank"
             rel="noreferrer"
           >
