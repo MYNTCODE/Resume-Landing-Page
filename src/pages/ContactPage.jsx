@@ -17,7 +17,7 @@ const ContactPage = () => {
   return (
     <>
       <div className="contact-container px-20 h-[30vh] lg:h-[40vh] lg:border-black bg-black text-center pt-6 lg:pt-4">
-        <h1 className="text-[30px] lg:text-[50px] lg:mt-[4%] text-white">
+        <h1 className=" text-[30px] lg:text-[50px] lg:mt-[4%] text-white">
           Contact
         </h1>
         <div className="contact-icon flex justify-center mt-8 lg:mt-0 space-x-6 lg:pt-6 ">

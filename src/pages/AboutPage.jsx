@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AboutPage = () => {
   return (
     <div className="about-container h-[100vh] lg:border-black lg:border-[3px] lg:m-10 lg:rounded-3xl  text-center">
@@ -35,19 +37,22 @@ const AboutPage = () => {
             <p className=" text-center text-[30px] mt-6">Content Creator</p>
           </div>
           <div className="content-study">
-            <a
-              className="flex items-center justify-center pt-10 lg:pt-0"
-              href="https://www.coursera.org/account/accomplishments/professional-cert/P25Z2PGQEJB5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="lg:h-[250px] h-[150px]"
-                src="https://cdn.discordapp.com/attachments/895300373911314483/1142439514388844554/image.png"
-                alt="study"
-              />
-            </a>
-            <p className=" text-center text-[30px] mt-6">Study</p>
+            <Link to={`/education`}>
+              {" "}
+              <a
+                className="flex items-center justify-center pt-10 lg:pt-0"
+                // href="https://www.coursera.org/account/accomplishments/professional-cert/P25Z2PGQEJB5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof"
+                // target="_blank"
+                // rel="noreferrer"
+              >
+                <img
+                  className="lg:h-[250px] h-[150px]"
+                  src="https://cdn.discordapp.com/attachments/895300373911314483/1142439514388844554/image.png"
+                  alt="study"
+                />
+              </a>
+            </Link>
+            <p className=" text-center text-[30px] mt-6">Education</p>
           </div>
         </div>
       </div>
