@@ -1,10 +1,16 @@
 import SliderImage from "../components/SliderImage";
+import Axios from "../assets/Axios.svg";
+import postman from "../assets/postman.svg";
+import tailwind from "../assets/tailwind.svg";
+import supabase from "../assets/supabase.svg";
+import node from "../assets/node.svg";
+import git from "../assets/git.svg";
 
 function HomeService() {
   return (
     <>
       <div className="prompt Home-service flex flex-col justify-center items-center h-[100%] lg:border-black lg:border-[3px] lg:m-10 lg:rounded-3xl m-10">
-        <h1 className="prompt-Bold text-3xl pt-6">HomeService</h1>
+        <h1 className="prompt-Bold text-3xl pt-6">Home Services</h1>
         <div className="notice-container mt-4 text-red-600">
           <p className=" ">
             *** โปรเจคนี้คือ final project ของการเรียน full stack development
@@ -28,7 +34,7 @@ function HomeService() {
           <div className="image-detail w-[350px] md:w-[100%] lg:w-[120%] h-[50%]">
             <SliderImage />
           </div>
-          <div className="text-detial lg:w-[70%] lg:text-left md:text-left lg:px-0 px-4 lg:py-16">
+          <div className="text-detial lg:w-[70%] lg:text-left md:text-left lg:px-0 px-4 lg:py-2">
             <p>
               การทำงานของกลุ่ม ทุกคนจะได้ทำแบบ full stack
               โดยจะทำการแบ่งหน้าที่ทั้งฝั่ง Frontend และ Backend ให้ทุกคนได้ทำ
@@ -61,6 +67,38 @@ function HomeService() {
               UI ฝั่งแอดมินทั้งหมดให้ตรงตาม requirements ที่ PO ต้องการ
             </p>
           </div>
+        </div>
+        <a
+          href="https://github.com/MYNTCODE/home-services-project"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          <p className="github-project mb-10 underline lg:mt-[-30px]">
+            {" "}
+            GitHub | Home services project
+          </p>
+        </a>
+        <p className=""> Tech Stack & Tools</p>
+        <div className="programming py-10 flex flex-col gap-10 md:flex-row lg:flex-row items-center">
+          <img className="w-[100px]" src={supabase} />
+          <img
+            className="w-[50px]"
+            src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+          />
+          <img className="w-[100px]" src={node} />
+          <img
+            className="w-[120px]"
+            src="https://cdn.discordapp.com/attachments/1144637676016898219/1174334427879452692/pngwing.com.png?ex=65673729&is=6554c229&hm=0a95396aec4952de166000162f27de3ca7141b11be29e58a066fa4874fdc1b63&"
+          />
+          <img className="w-[120px]" src={git} />
+        </div>
+
+        <div className="tools py-10 flex flex-col gap-6 md:flex-row lg:flex-row lg:mt-[-50px] ">
+          <img src={Axios} />
+          <img src={postman} />
+          <img src="https://uploads-ssl.webflow.com/602a49b4c90708f6641a192e/62aaec4339a8f3b14347736a_123_ant-design.259fccdbe1.png" />
+          <img src={tailwind} />
         </div>
       </div>
     </>
