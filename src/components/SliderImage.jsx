@@ -39,17 +39,23 @@ function SliderImage() {
     setCurrentIndex(slideIndex);
   };
   return (
-    <div className="max-w-[1400px] h-[520px] w-full m-auto py-16 px-4 relative group">
+    <div className=" max-w-[1400px] h-[400px] sm:h-[400px] sm:mt-[-40px] md:h-[600px] lg:h-[600px] w-full m-auto mt-[-20px] py-20 lg:pt-10 px-4 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500 border-[2px] border-gray-700"
       ></div>
       {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-10 text2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div
+        title="previous"
+        className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-10 text2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+      >
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
-      <div className="hidden group-hover:block  absolute top-[50%] -translate-x-0 translate-y-[-50%] right-10 text2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div
+        title="next"
+        className="hidden group-hover:block  absolute top-[50%] -translate-x-0 translate-y-[-50%] right-10 text2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+      >
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
       <div className="flex top-4 justify-center py-2 ">

@@ -122,6 +122,24 @@ const SkillsPage = () => {
         </div>
         <div className="projects my-10 mx-12">
           <section className="projects-web lg:flex lg:justify-between lg:h-[600px] lg:p-[20px]">
+            <div className=" flex-col">
+              <div className="project-display ">
+                <a
+                  href={`/homeservice`}
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://cdn.discordapp.com/attachments/1144637676016898219/1174297385040613449/Screenshot_2023-11-15_173728.jpg?ex=656714a9&is=65549fa9&hm=97d179221a7a1ec2e8c24bb36302530b124dabfa3b49bc2a475fdd1025a95766&"
+                    alt=""
+                    className="project-image"
+                  />
+                </a>
+              </div>
+              <p className="project-title py-6 lg:py-0 lg:pt-10">
+                Home Services Website
+              </p>{" "}
+            </div>
             {projects.map((project, index) => (
               <div key={index}>
                 <div className="project-display ">

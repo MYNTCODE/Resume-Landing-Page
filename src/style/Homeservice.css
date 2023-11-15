@@ -1,0 +1,11 @@
+.tools img {
+  width: 100px;
+}
+
+/* .programming img {
+  width: 100px;
+} */
+
+.github-project:hover {
+  color: #32a396;
+}
