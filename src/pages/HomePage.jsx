@@ -74,11 +74,11 @@ const HomePage = () => {
             />
           </div>
           <a
-            href="https://cdn.discordapp.com/attachments/1144637676016898219/1173479593211068497/Resume-Pornphimol-Saelao..pdf?ex=65641b09&is=6551a609&hm=0b359aeb80c0da977c30501630d18211e9906f31d48754693bc688ef19e2db9d&"
+            href="https://cdn.discordapp.com/attachments/1144637676016898219/1176801960960213082/Pornphimol-Saelao_Resume.pdf?ex=6570313b&is=655dbc3b&hm=6be590b5302ff5bfabcfb8173064b5c9aa873ebd83088a9865c5ce26a3b361c4&"
             target="_blank"
             rel="noreferrer"
           >
-            <button title="GitHub" className=" text-[16px]">
+            <button title="Resume" className=" text-[16px]">
               Resume
             </button>
           </a>{" "}

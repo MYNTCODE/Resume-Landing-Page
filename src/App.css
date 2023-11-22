@@ -29,6 +29,10 @@
 ::selection {
   background-color: #83cabe;
 }
+/* ::selection {
+  background-color: #dfdfdf;
+} */
+
 /*---NavBar---*/
 nav {
   font-weight: 400;
