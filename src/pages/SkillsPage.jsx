@@ -1,10 +1,33 @@
 import { Link } from "react-router-dom";
 import projects from "../data/projects";
+import { useEffect } from "react";
 
 const SkillsPage = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".projects-web");
+
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+        if (isVisible) {
+          element.classList.add("slide-up");
+        } else {
+          element.classList.remove("slide-up");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <div className="skills-container flex-col mt-10 lg:h-[100vh] border-black pt-20 lg:border-[3px] lg:m-10 rounded-3xl">
+      <div className="skills-container flex-col mt-10 lg:h-[100vh] border-black pt-20 lg:border-[3px] lg:m-10 rounded-3xl md:mt-[60%]">
         <h1 className="mt-6 text-[30px] lg:text-[50px]">Skill and Projects</h1>
         <div className="content-skills flex-col mt-[5%] ">
           <div className="skills-1 flex justify-center lg:space-x-4 mb-4 space-x-1">
@@ -121,8 +144,8 @@ const SkillsPage = () => {
             </a>
           </div>
         </div>
-        <div className="projects my-10 mx-12 lg:mx-28">
-          <section className="projects-web lg:flex lg:justify-between lg:h-[600px] lg:p-[20px] mt-28">
+        <div className="projects my-10 mx-12 lg:mx-28 md:flex md:justify-center  sm:flex sm:justify-center ">
+          <section className="projects-web lg:flex lg:justify-between lg:gap-10 lg:mt-10 lg:h-[600px] lg:p-[20px] mt-28">
             <div className=" flex-col">
               <div className="project-display ">
                 <Link to={`/homeservice`}>
