@@ -78,7 +78,7 @@ const HomePage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button title="Resume" className=" text-[16px]">
+            <button title="Resume" className=" text-[16px] cursor-none">
               Resume
             </button>
           </a>{" "}

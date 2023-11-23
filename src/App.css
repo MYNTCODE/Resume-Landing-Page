@@ -118,6 +118,7 @@ li img {
 .home-page button {
   border: none;
   color: #000;
+  cursor: none;
 }
 .home-page button:after {
   position: absolute;
@@ -134,6 +135,7 @@ li img {
 }
 .home-page button:hover {
   background-color: #dddddd;
+  cursor: none;
 }
 .home-page button:hover:after {
   left: auto;
