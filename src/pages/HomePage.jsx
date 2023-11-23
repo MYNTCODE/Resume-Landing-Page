@@ -63,13 +63,13 @@ const HomePage = () => {
               MYNTCODE
             </h1>
             <h3 className="text-[24px]" title="Full Stack Developer">
-              Full Stack Developer
+              Developer
             </h3>
           </div>
           <div className=" flex justify-center">
             <img
               title="Laptop"
-              className="home-laptop w-[50%]  lg:w-[15%]"
+              className="home-laptop w-[50%] md:w-[40%]  lg:w-[15%]"
               src="https://cdn.discordapp.com/attachments/895300373911314483/1142425596870266920/image.png"
             />
           </div>
@@ -83,12 +83,15 @@ const HomePage = () => {
             </button>
           </a>{" "}
           <div className="infomation-box flex items-center  justify-center  text-start w-full h-[300px] ">
-            <p className=" px-10 lg:w-[45%] lg:text-[18px]">
+            <p className=" px-10 lg:w-[45%] lg:text-[18px] md:text-[18px] md:mx-10">
               &nbsp; Hello, my name is Mint (MYNTCODE). Currently a full stack
               developer bootcamp student and working as a content creator. I'm
               interested in coding because I can created something new that is
-              more convenient for people. And coding is makes me learn new
-              things, be challenged everyday.
+              more convenient for people.{" "}
+              {/* Coding is makes me learn new things,
+              be challenged everyday.  */}
+              I'm a web developer with a passion. Learning a new challenges and
+              opportunities to grow my skills
               <span className=" font-bold">
                 &nbsp; Programming is like magic in fantasy.
               </span>
@@ -96,7 +99,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="about-page h-[100vh]" ref={aboutRef}>
+        <div className="about-page h-[100vh] " ref={aboutRef}>
           <AboutPage />
         </div>
         <div className="skills-page" ref={skillsRef}>

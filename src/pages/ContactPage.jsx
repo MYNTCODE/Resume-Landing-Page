@@ -17,19 +17,19 @@ Link.propTypes = {
 const ContactPage = () => {
   return (
     <>
-      <div className="contact-container px-20 h-[70vh] lg:h-[60vh] lg:border-black bg-black text-center pt-6 lg:pt-12 ">
-        <h1 className=" lg:hidden text-[30px] lg:text-[50px] lg:mt-[4%] text-white">
+      <div className="contact-container px-20 h-[70vh] lg:h-[60vh] lg:border-black bg-black text-center pt-6 lg:pt-12 md:pt-12">
+        <h1 className=" lg:hidden md:hidden text-[30px] lg:text-[50px] lg:mt-[4%] text-white">
           Contact
         </h1>
-        <div className=" lg:flex lg:justify-center lg:item-center lg:gap-10  ">
+        <div className=" lg:flex lg:justify-center lg:item-center lg:gap-10 md:flex md:justify-center md:item-center md:gap-10 ">
           <div className="ml-[-39px]">
             <ContactBox />
           </div>
           <div>
-            <h1 className="hidden lg:block text-[30px] lg:text-[50px] lg:mt-[10%] text-white">
+            <h1 className="hidden md:block lg:block text-[30px] lg:text-[50px] lg:mt-[10%] text-white">
               Contact Me !
             </h1>
-            <div className="contact-icon flex justify-center items-center mt-8 lg:mt-[40px] space-x-6">
+            <div className="contact-icon flex justify-center items-center mt-8 lg:mt-[40px] md:mt-[40px] space-x-6">
               <Link url="https://github.com/MYNTCODE">
                 <img
                   src="https://cdn.discordapp.com/attachments/1144637676016898219/1169301599320023152/github_4.png?ex=6554e7f9&is=654272f9&hm=08c6e9c22ccdc84ab86f48a265a87ae637706c55191c6b7c7cf2f71662bc2f61&"

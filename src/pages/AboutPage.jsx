@@ -25,7 +25,7 @@ const AboutPage = () => {
     };
   }, []);
   return (
-    <div className="about-container h-[100vh] lg:border-black lg:border-[3px] lg:m-10 lg:rounded-3xl  text-center">
+    <div className="about-container h-[100vh] lg:border-black lg:border-[3px] md:mt-[100px] lg:m-10 lg:rounded-3xl  text-center">
       <h1 className=" text-[30px] lg:text-[50px] lg:mt-[7%]">About Me</h1>
       <div className="icon-about-me flex mx-[10%]">
         <div className="about-content lg:flex  w-full lg:justify-evenly my-[10%]">
@@ -37,7 +37,7 @@ const AboutPage = () => {
               rel="noreferrer"
             >
               <img
-                className="lg:h-[250px] h-[150px]"
+                className="  h-[150px] lg:h-[250px] lg:w-[250px] md:w-[40%] md:h-[40%]"
                 src="https://cdn.discordapp.com/attachments/895300373911314483/1142438983561924719/image.png"
                 alt="coding"
               />
@@ -52,7 +52,7 @@ const AboutPage = () => {
               rel="noreferrer"
             >
               <img
-                className="lg:h-[250px] h-[150px]"
+                className="lg:h-[250px] h-[150px]  lg:w-[250px] md:w-[40%] md:h-[40%]"
                 src="https://cdn.discordapp.com/attachments/895300373911314483/1142439211304222800/image.png"
                 alt="creator"
               />
@@ -69,7 +69,7 @@ const AboutPage = () => {
                 // rel="noreferrer"
               >
                 <img
-                  className="lg:h-[250px] h-[150px]"
+                  className="lg:h-[250px] h-[150px] lg:w-[250px] md:w-[40%] md:h-[40%]"
                   src="https://cdn.discordapp.com/attachments/895300373911314483/1142439514388844554/image.png"
                   alt="study"
                 />
