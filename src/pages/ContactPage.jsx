@@ -17,7 +17,7 @@ Link.propTypes = {
 const ContactPage = () => {
   return (
     <>
-      <div className="contact-container px-20 h-[70vh] lg:h-[60vh] lg:border-black bg-black text-center pt-6 lg:pt-12 md:pt-12">
+      <div className="contact-container px-20 h-[80vh] lg:h-[60vh] lg:border-black bg-black text-center pt-6 lg:pt-12 md:pt-12">
         <h1 className=" lg:hidden md:hidden text-[30px] lg:text-[50px] lg:mt-[4%] text-white">
           Contact
         </h1>

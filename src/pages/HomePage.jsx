@@ -4,7 +4,7 @@ import SkillsPage from "./SkillsPage";
 import AboutPage from "./AboutPage";
 import ContactPage from "./ContactPage";
 import CustomCursor from "../components/CustomCursor";
-
+import { motion } from "framer-motion";
 /* useRef ใช้สร้าง ref objects เพื่ออ้างอิงถึง elements ใน DOM 
 และเก็บค่าตัวแปรใน component ในการสร้างเว็บไซต์แบบ Single Page Application 
 โดยให้เลื่อนมุมมองไปยังส่วนที่ต้องการได้ */
@@ -66,13 +66,29 @@ const HomePage = () => {
               Developer
             </h3>
           </div>
-          <div className=" flex justify-center">
-            <img
-              title="Laptop"
-              className="home-laptop w-[50%] md:w-[40%]  lg:w-[15%]"
-              src="https://cdn.discordapp.com/attachments/895300373911314483/1142425596870266920/image.png"
-            />
-          </div>
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+              scale: {
+                type: "spring",
+                damping: 10,
+                stiffness: 100,
+                restDelta: 0.001,
+              },
+            }}
+          >
+            <div className=" flex justify-center">
+              <img
+                title="Laptop"
+                className="home-laptop w-[50%] md:w-[40%]  lg:w-[15%]"
+                src="https://cdn.discordapp.com/attachments/895300373911314483/1142425596870266920/image.png"
+              />
+            </div>{" "}
+          </motion.div>
           <a
             href="https://cdn.discordapp.com/attachments/1144637676016898219/1176801960960213082/Pornphimol-Saelao_Resume.pdf?ex=6570313b&is=655dbc3b&hm=6be590b5302ff5bfabcfb8173064b5c9aa873ebd83088a9865c5ce26a3b361c4&"
             target="_blank"
@@ -91,7 +107,7 @@ const HomePage = () => {
               {/* Coding is makes me learn new things,
               be challenged everyday.  */}
               I'm a web developer with a passion. Learning a new challenges and
-              opportunities to grow my skills
+              opportunities to grow my skills.
               <span className=" font-bold">
                 &nbsp; Programming is like magic in fantasy.
               </span>
