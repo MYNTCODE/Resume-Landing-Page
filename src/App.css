@@ -292,3 +292,26 @@ li img {
 .home-click:hover {
   font-weight: 700;
 }
+
+@keyframes slide-up {
+  from {
+    transform: translateY(5%);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-container {
+    animation: slide-in 1000ms;
+    animation-delay: 0ms;
+  }
+  .slide-up {
+    animation: slide-up 1000ms;
+    animation-delay: 0ms;
+    /* ตัวอย่างอื่น ๆ ที่คุณอาจต้องการใส่ */
+  }
+}
