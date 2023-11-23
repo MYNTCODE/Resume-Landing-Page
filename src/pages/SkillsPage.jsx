@@ -121,8 +121,8 @@ const SkillsPage = () => {
             </a>
           </div>
         </div>
-        <div className="projects my-10 mx-12">
-          <section className="projects-web lg:flex lg:justify-between lg:h-[600px] lg:p-[20px]">
+        <div className="projects my-10 mx-12 lg:mx-28">
+          <section className="projects-web lg:flex lg:justify-between lg:h-[600px] lg:p-[20px] mt-28">
             <div className=" flex-col">
               <div className="project-display ">
                 <Link to={`/homeservice`}>

@@ -1,6 +1,29 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const AboutPage = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".about-content");
+
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+        if (isVisible) {
+          element.classList.add("slide-up");
+        } else {
+          element.classList.remove("slide-up");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="about-container h-[100vh] lg:border-black lg:border-[3px] lg:m-10 lg:rounded-3xl  text-center">
       <h1 className=" text-[30px] lg:text-[50px] lg:mt-[7%]">About Me</h1>
