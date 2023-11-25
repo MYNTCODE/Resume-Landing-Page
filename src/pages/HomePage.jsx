@@ -84,7 +84,7 @@ const HomePage = () => {
             <div className=" flex justify-center">
               <img
                 title="Laptop"
-                className="home-laptop w-[50%] md:w-[40%]  lg:w-[15%]"
+                className="home-laptop w-[50%] md:w-[40%]  lg:w-[15%] "
                 src="https://cdn.discordapp.com/attachments/895300373911314483/1142425596870266920/image.png"
               />
             </div>{" "}

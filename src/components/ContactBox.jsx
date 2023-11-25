@@ -114,7 +114,7 @@ function ContactBox() {
 
             <button
               type="submit"
-              className="w-[20%] lg:ml-10 h-[50px] border rounded-xl "
+              className="w-[40%] lg:ml-10 h-[50px] border rounded-xl "
               disabled={isLoading}
             >
               {isLoading ? "Sending..." : "Send"}

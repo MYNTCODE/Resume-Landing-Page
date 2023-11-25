@@ -27,7 +27,7 @@ const ContactPage = () => {
           </div>
           <div>
             <h1 className="hidden md:block lg:block text-[30px] lg:text-[50px] lg:mt-[10%] text-white">
-              Contact Me !
+              Contact
             </h1>
             <div className="contact-icon flex justify-center items-center mt-8 lg:mt-[40px] md:mt-[40px] space-x-6">
               <Link url="https://github.com/MYNTCODE">
