@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import projects from "../data/projects";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const SkillsPage = () => {
   useEffect(() => {
@@ -91,6 +92,7 @@ const SkillsPage = () => {
               />
             </a>
           </div>
+
           <div className="skills-2 flex justify-center lg:space-x-4 space-x-1">
             <a href="https://react.dev/" target="_blank" rel="noreferrer">
               <img
@@ -143,7 +145,7 @@ const SkillsPage = () => {
               />
             </a>
           </div>
-        </div>
+        </div>{" "}
         <div className="projects my-10 mx-12 lg:mx-28 md:flex md:justify-center  sm:flex sm:justify-center ">
           <section className="projects-web lg:flex lg:justify-between lg:gap-10 lg:mt-10 lg:h-[600px] lg:p-[20px] mt-28">
             <div className=" flex-col">
