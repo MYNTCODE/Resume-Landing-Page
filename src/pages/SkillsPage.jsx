@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import projects from "../data/projects";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
+import  github  from "../assets/github.png"
+import google from "../assets/google.svg"
+import freecodecamplogo from "../assets/freecodecamp.png"
+
 
 const SkillsPage = () => {
   useEffect(() => {
@@ -38,14 +41,14 @@ const SkillsPage = () => {
               rel="noreferrer"
             >
               <img
-                src="https://cdn.discordapp.com/attachments/1144637676016898219/1166816599798468618/github-sign.png?ex=654bdda3&is=653968a3&hm=4eb24f9999e861da449ae53a62f4f0c3e9471628df6e0679e7596c0d6126e8e4&"
+                src={ github }
                 alt="github-sign"
                 title="github"
               />
             </a>
             <a href="https://github.com/" target="_blank" rel="noreferrer">
               <img
-                src="https://cdn.discordapp.com/attachments/1144637676016898219/1166818792354091068/git.png?ex=654bdfae&is=65396aae&hm=b901327fd6a7a6e66716f1327735e773548cf8fdb5f252ae5c0cc3abe0999d4e&"
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg"
                 alt="github-version-control"
                 title="github version control"
               />
@@ -86,7 +89,7 @@ const SkillsPage = () => {
               rel="noreferrer"
             >
               <img
-                src="https://cdn.discordapp.com/attachments/895300373911314483/1142450832986611754/image.png"
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
                 alt="Javascript"
                 title="Javascript"
               />
@@ -103,7 +106,7 @@ const SkillsPage = () => {
             </a>
             <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
               <img
-                src="https://cdn.discordapp.com/attachments/895300373911314483/1142453469916180580/mongodb.png"
+                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg"
                 alt="mongoDB"
                 title="mongoDB"
               />
@@ -128,7 +131,7 @@ const SkillsPage = () => {
               rel="noreferrer"
             >
               <img
-                src="https://cdn.discordapp.com/attachments/895300373911314483/1142453710241415198/image.png"
+                src={google}
                 alt="data analytics"
                 title="data analytics"
               />
@@ -139,7 +142,7 @@ const SkillsPage = () => {
               rel="noreferrer"
             >
               <img
-                src="https://cdn.discordapp.com/attachments/895300373911314483/1142481142742790194/freecodecamp.1024x1024.png"
+                src={freecodecamplogo}
                 alt="free code camp"
                 title="FreeCodCamp"
               />

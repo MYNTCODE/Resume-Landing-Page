@@ -1,4 +1,8 @@
 import PropTypes from "prop-types";
+import Home from "../assets/home.png"
+import User from "../assets/user.png"
+import Coding from "../assets/coding.png"
+import Contact from "../assets/email.png"
 
 const NavBar = ({
   handleHomeClick,
@@ -12,25 +16,25 @@ const NavBar = ({
         <li onClick={handleHomeClick}>
           <img
             className=""
-            src="https://cdn.discordapp.com/attachments/895300373911314483/1142478714479837305/image.png"
+            src={Home}
             alt="Home"
           />
         </li>
         <li onClick={handleAboutClick}>
           <img
-            src="https://cdn.discordapp.com/attachments/895300373911314483/1142478534263189504/image.png"
+            src={User}
             alt="About Me"
           />
         </li>
         <li onClick={handleSkillsClick}>
           <img
-            src="https://cdn.discordapp.com/attachments/895300373911314483/1142397133476073472/image.png"
+            src={Coding}
             alt="Skills"
           />
         </li>
         <li onClick={handleContactsClick}>
           <img
-            src="https://cdn.discordapp.com/attachments/895300373911314483/1142477670479826954/image.png"
+            src={Contact}
             alt="Contact"
           />
         </li>
