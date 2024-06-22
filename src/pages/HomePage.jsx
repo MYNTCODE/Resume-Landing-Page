@@ -4,6 +4,7 @@ import SkillsPage from "./SkillsPage";
 import AboutPage from "./AboutPage";
 import ContactPage from "./ContactPage";
 import CustomCursor from "../components/CustomCursor";
+import laptop from "../assets/laptop.png"
 import { motion } from "framer-motion";
 /* useRef ใช้สร้าง ref objects เพื่ออ้างอิงถึง elements ใน DOM 
 และเก็บค่าตัวแปรใน component ในการสร้างเว็บไซต์แบบ Single Page Application 
@@ -85,7 +86,7 @@ const HomePage = () => {
               <img
                 title="Laptop"
                 className="home-laptop w-[50%] md:w-[40%]  lg:w-[15%] "
-                src="https://cdn.discordapp.com/attachments/895300373911314483/1142425596870266920/image.png"
+                src={laptop}
               />
             </div>{" "}
           </motion.div>

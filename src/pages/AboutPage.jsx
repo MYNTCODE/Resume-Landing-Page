@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import coding from "../assets/coding.png"
+import content from "../assets/content.png"
+import learning from "../assets/online-learning.png"
 
 const AboutPage = () => {
   useEffect(() => {
@@ -38,7 +41,7 @@ const AboutPage = () => {
             >
               <img
                 className="  h-[150px] lg:h-[250px] lg:w-[250px] md:w-[40%] md:h-[40%]"
-                src="https://cdn.discordapp.com/attachments/895300373911314483/1142438983561924719/image.png"
+                src={coding}
                 alt="coding"
               />
             </a>
@@ -53,7 +56,7 @@ const AboutPage = () => {
             >
               <img
                 className="lg:h-[250px] h-[150px]  lg:w-[250px] md:w-[40%] md:h-[40%]"
-                src="https://cdn.discordapp.com/attachments/895300373911314483/1142439211304222800/image.png"
+                src={content}
                 alt="creator"
               />
             </a>{" "}
@@ -70,7 +73,7 @@ const AboutPage = () => {
               >
                 <img
                   className="lg:h-[250px] h-[150px] lg:w-[250px] md:w-[40%] md:h-[40%]"
-                  src="https://cdn.discordapp.com/attachments/895300373911314483/1142439514388844554/image.png"
+                  src={learning}
                   alt="study"
                 />
               </a>
