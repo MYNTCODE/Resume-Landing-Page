@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import  github  from "../assets/github.png"
 import google from "../assets/google.svg"
 import freecodecamplogo from "../assets/freecodecamp.png"
+import HomeService from "../assets/project/home-service/home-service.jpg"
 
 
 const SkillsPage = () => {
@@ -155,7 +156,7 @@ const SkillsPage = () => {
               <div className="project-display ">
                 <Link to={`/homeservice`}>
                   <img
-                    src="https://cdn.discordapp.com/attachments/1144637676016898219/1174297385040613449/Screenshot_2023-11-15_173728.jpg?ex=656714a9&is=65549fa9&hm=97d179221a7a1ec2e8c24bb36302530b124dabfa3b49bc2a475fdd1025a95766&"
+                    src={HomeService}
                     alt=""
                     className="project-image"
                   />
